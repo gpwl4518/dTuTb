@@ -1,0 +1,103 @@
+@charset "utf-8";
+    
+    
+/*반응형 웹
+(ex.웹으로햇을떄 안보이게할거를 적거나 구조를 바꾼다거나 하는거는 여기다가)*/
+
+/*큰사이즈부터 위에 순서대로 있어야됨*/
+/*내노트북사이즈*/
+@media screen and (max-width:1366px){
+    .mainFront{
+        height: 60vh;
+    }
+    .copyRight{
+        bottom: 80%;
+        font-size: 11px;
+        right: -10px;
+    }
+    .arrow{
+        left: 50%;
+        height: 10vh;
+    }
+    .gnb{
+        font-size:13px; 
+            right: 80px;
+    }
+    .gnb li {
+    margin: 0 20px;
+        
+    }
+    #headerSet {
+        padding-top: 70px;
+    }
+    .hamburger {
+            top: -25px;
+    }
+    
+    .ie .wrapMain{
+        
+    }
+    .ie .mainFront{
+      
+    }
+    .ie .copyRight{
+        bottom: 90%;
+    }
+}
+/*작은노트북사이즈*/
+@media screen and (max-width:1024px){
+    .mainFront{
+        height: 80vh;
+    }
+    .copyRight{
+        bottom: 60%;
+    }
+    .arrow{
+        left: 50%;
+        height: 7vh;
+    }
+    .gnb{
+        font-size:13px; 
+    }
+    .gnb li {
+    margin: 0 10px;
+        
+    }
+}
+
+/*모바일사이즈*/
+@media screen and (max-width:768px){
+    
+    .gnb{
+        display: none;
+    }
+    .get{
+        display: none;
+    }
+    .mainTitle{
+        display: none;
+    }
+    .mainTitle span{
+        display: block;
+    }
+    .copyRight{
+        display: none;
+    }
+    .logoSet {
+        left: 40px;
+    }
+    #headerSet{
+        padding-top: 40px;
+    }
+    .hamburger{
+        margin: 50px;
+    }
+    .arrow{
+        left: 52%;
+        height: 7vh;
+    }
+    .snsIcon {
+    position: absolute;
+    bottom: 80px;
+    left: 40px;
+}

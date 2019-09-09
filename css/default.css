@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+/*기본css*/
+/****default 기본,이너,cf등등~~~~얘네만있는것******/
+body{
+    font-family: 'NotoSans', sans-serif;
+}
+
+
+body,h1,h2,h3,h4,h5,h6,p,dl,dd{
+    margin:0;
+    
+}
+
+ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:#292929;
+}
+
+.inner{
+    width:1300px;
+    margin:0 auto;
+}
+
+.cf:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+img{border:0}
+
+ body {overflow-x: hidden;}/*x축 스크롤바없애주는거*/
+/*************************************/
+
+/* ie 용 스크롤 바 *********************************************/
+html { scrollbar-arrow-color: gray;
+
+        scrollbar-Track-Color: rgba(0,0,0,0); 
+        scrollbar-base-color: gray;
+
+        scrollbar-Face-Color: gray;
+
+        scrollbar-3dLight-Color: rgba(0,0,0,0.5);         
+        scrollbar-DarkShadow-Color: rgba(0,0,0,0.5);
+
+        scrollbar-Highlight-Color: rgba(0,0,0,0.5);
+
+        scrollbar-Shadow-Color: rgba(0,0,0,0.5)}
+
+
+
+/* Chrome, Safari용 스크롤 바 */
+::-webkit-scrollbar {
+    width: 2px; 
+    height: 2px;
+}
+::-webkit-scrollbar-button:start:decrement, 
+::-webkit-scrollbar-button:end:increment {
+    display: block; width: 12px;height:0; 
+    background: url() rgba(0,0,0,0.5);
+}
+
+::-webkit-scrollbar-track { 
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb {  background:gray;  }
+
+/* ------------------------------------------------------------ */
+
