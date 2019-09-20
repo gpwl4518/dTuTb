@@ -8,11 +8,13 @@
     background:#0F0F14;
     height: 3000px;
     width: 100%;
+    margin-top: -50px;
 }
 .subCon2{
     background:#0F0F14;
     height: 3300px;
     width: 100%;
+    margin-top: -50px;
 }
 .contact{
     background:#0F0F14;
@@ -40,7 +42,7 @@
 .backFont3{
     position: absolute;
     right: -18px;
-    top: 3686px;
+    top: 3660px;
 }
 
 .box1{
@@ -134,7 +136,7 @@
 }
 .web{
     
-        box-shadow:15px 15px 25px rgba(0,0,0,0.2);
+        box-shadow:15px 15px 25px rgba(0,0,0,0.5);
 }
 
 .Graphic{

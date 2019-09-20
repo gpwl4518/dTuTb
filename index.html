@@ -34,12 +34,14 @@
             
              AOS.init()
             /*스크롤을 내리면 work에 있는 이미지애니메이션나타나게 해주는거*/
-                         
+            
+            
+            //바로하단에있는거는 메인이 div없이 캔버스로 이루어졌기떄문에 그애를 불러서 클래스로 만들어준것임 그리고 그애대신 익스플로러에서는 정지된 메인화면이 나올수있게해놓음
             var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
                 if (is_chrome) {
                   $('canvas').wrap('<div class="wrapMain"></div>')
                 }  
-            
+   
             
             var ua = window.navigator.userAgent;
             if(ua.indexOf('MSIE ') > 0 || ua.indexOf('Trident/') > 0){ //윈도우 10까지는 MSIE 윈도우 11부터는 Trident/를 사용한다.
@@ -61,56 +63,61 @@
             }
         })();
     </script>
-        <!--파비콘-->
-        <link rel=" shortcut icon" href="images/favicon.ico">
-        <link rel="icon" href="images/favicon.ico">
-        <!--파비콘-->
-        <!--반응형 미디어쿼리-->
-        <link rel="stylesheet" type="text/css" href="css/media.css"/>
+   <!--맨밑에 샌드메일 버튼-->
+    <!--로딩화면-->
+    <script>
+    $(window).load(function(){
+        $(".loading").fadeOut(1500);
+    });
+    </script>
+    <!--로딩화면-->
 
-    </head>
+       
+    <!--파비콘(젤끝에먹게하는게 좋다-->
+    <link rel=" shortcut icon" href="images/favicon.ico">
+    <link rel="icon" href="images/favicon.ico">
+    <!--파비콘(젤끝에먹게하는게 좋다-->
+    <!--반응형 미디어쿼리(젤끝에먹게하는게 좋다-->
+    <link rel="stylesheet" type="text/css" href="css/media.css"/>
+
+</head>
     <body> 
         <!--익스플로러경고창-->
+        <!--[if lt IE 9> <script type="text/javascript"> alert('이 사이트는 chrome에 최적화 되어있습니다.') </script> <![endif]-->
         
-        <!--[if lte IE 8]> <script type=text/javascript> alert("홈페이지는 [Internet Explorer 7]이하의 버전을 지원하지 않습니다. \n\n안전하고 쾌적한 인터넷 환경을 위해 chrome브라우저나 상위버전 익스플로러를 사용해주세요."); </script> <![endif]-->
-        <!--[if gte IE 9]>
-            <script type="text/javascript">
-                $(document).ready(function(){
-                   
-                })
-            </script>
-        <![endif]-->
-
-
-
 
         <!--익스플로러일때-->
-        <!--오른쪽스크롤-->
-        <!--오른쪽스크롤-->
+     
+
+
         
-        <div class="fat-nav">
-        <div class="fat-nav__wrapper">
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#2">PORTFOLIO</a></li>
-                <li><a href="#3">ETC</a></li>
-                <li><a href="#4">CONTACT</a></li>
-            </ul>
-        </div>
-            
-        <!--메뉴아이콘움직이는거-->
-        <script type="text/javascript" src="js/jquery.fatNav.min.js"></script>
-        <script type="text/javascript" src="js/main4.js"></script>
-        <!--메뉴아이콘움직이는거-->
-            
-        </div>
+        
         <!--전체시작-->
         <div id="wrap">
+           <!--메뉴 햄버거-->
+           <div class="burger">
+            <div class="fat-nav">
+                <div class="fat-nav__wrapper">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#2">PORTFOLIO</a></li>
+                        <li><a href="#3">ETC</a></li>
+                        <li><a href="#4">CONTACT</a></li>
+                    </ul>
+                </div>
+
+                <!--메뉴아이콘움직이는거(얘는 바디안에있어야 구동됨 ㅠ-->
+                <script type="text/javascript" src="js/jquery.fatNav.min.js"></script>
+                <script type="text/javascript" src="js/main4.js"></script>
+                <!--메뉴아이콘움직이는거(얘는 바디안에있어야 구동됨 ㅠ-->
+            </div>
+            </div>
+           <!--메뉴 햄버거-->
             <!--헤더시작-->
             <aside id="headerSet">
                     <nav class="header heBox1 active" data-target="1">
-                            <div class="logoSet cf">
+                            <div class="logoSet cf" data-aos="fade-down" data-aos-duration="2300">
                                 <!--로고시작-->
                                 <h1><a href="#"><img src="images/logo.png" alt="로고"/></a></h1>
                                 <!--로고끘-->
@@ -191,7 +198,7 @@
                     <!--메인움직이게하는거-->
 
                     <!--메인 위에 글씨 감싸는 클래스-->
-                    <div class="mainFront">
+                    <div class="mainFront" data-aos="fade-up" data-aos-duration="2300">
                         <!--저작권그거-->
                         <div class="copyRight">
                         Copyright &#169; 2019 HYE JI. All rights reserved
@@ -211,7 +218,7 @@
                         <!--
                         <div class="scroll">
                          <a href="#"><img src="images/scroll.png" alt="내려달라는 움직이는 아이콘"/></a>
-                        </div>
+                        </div>-->
                         <!--정지스크롤-->
                         
                         
@@ -256,7 +263,9 @@
                                 <a class="webImg" href="#"><img src="images/webImg.png" alt="웹대표이미지"/></a>
                                 
                                 <div class="webClick">
-                                    <a class="moreBtn" href="https://gpwl4518.github.io/mac/" target="_blank"><img src="images/more.png"></a>
+                                    <a class="moreBtn" href="https://gpwl4518.github.io/mac/" target="_blank">
+                                    <img src="images/more.png">
+                                    </a>
                                     <a class="moreBtn2" href="#">MORE</a>
                                 </div>
                             </div>
@@ -490,5 +499,6 @@
         </div>
         <!--전체시작-->
     </body>
+    <div class="loading"></div>
     
 </html>

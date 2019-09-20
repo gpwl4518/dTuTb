@@ -1,13 +1,14 @@
 @charset "utf-8";
 /*메인*/
 
-
 .ie .wrapMain{
     background:url(../images/mainIMG.png) no-repeat center;
     overflow: hidden;
     box-sizing: border-box;
     background-size: cover;
 }
+
+
 
 /****************메인움직이게하는거************************/
 .wave{
@@ -37,6 +38,13 @@
     overflow: hidden;
 }
 /****************메인움직이게하는거************************/
+
+/************오른쪽상단 햄버거 메뉴****************/
+.burger{
+}
+/************오른쪽상단 햄버거 메뉴****************/
+
+
 canvas{
     position:absolute;
     left:50%;
