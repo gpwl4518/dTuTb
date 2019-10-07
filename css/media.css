@@ -5,10 +5,236 @@
 (ex.웹으로햇을떄 안보이게할거를 적거나 구조를 바꾼다거나 하는거는 여기다가)*/
 
 /*큰사이즈부터 위에 순서대로 있어야됨*/
-/*내노트북사이즈*/
+
+
+/*2560x1440세로는118px(크롬윗부분)씩 빼줘서 1322px여기맞춰야함*/
+@media screen and (max-width:2560px){
+    .mainFront{
+        height:127vh;
+    }
+    .copyRight{
+        bottom: 37%;
+        /**right: -10px;**/
+    }
+    .arrow{
+       /** left: 50%;**/
+       margin-top: 60px;
+    }
+    .gnb{
+       /**right: 80px;**/
+    }
+    .gnb li {
+    /**margin: 0 20px;**/
+        
+    }
+    
+    
+    #headerSet {
+       /** padding-top: 70px;**/
+    }
+    .hamburger {
+           /** top: -25px;**/
+    }
+    .subCon1{
+       margin-top:280px;
+    }
+    
+    
+    .ie .wrapMain{
+        
+    }
+    .ie .mainFront{
+      height:120vh;
+    }
+    .ie .copyRight{
+        /**bottom: 90%;**/
+    }
+}
+
+/* 1920x1200*/
+@media screen and (max-width:1920px){
+    .mainFront{
+        height:110vh;
+    }
+    .copyRight{
+        bottom: 40%;
+        /**right: -10px;**/
+    }
+    .arrow{
+       /** left: 50%;**/
+       margin-top: 50px;
+    }
+    .gnb{
+       /**right: 80px;**/
+    }
+    .gnb li {
+    /**margin: 0 20px;**/
+        
+    }
+    
+    
+    #headerSet {
+       /** padding-top: 70px;**/
+    }
+    .hamburger {
+           /** top: -25px;**/
+    }
+    .subCon1{
+       margin-top:-10px;
+    }
+    
+    
+    .ie .wrapMain{
+        
+    }
+    .ie .mainFront{
+      height:100vh;
+    }
+    .ie .copyRight{
+        /**bottom: 90%;**/
+    }
+    
+}
+
+/* 1680x1050*/
+@media screen and (max-width:1680px){
+    .mainFront{
+        height:95vh;
+    }
+    .copyRight{
+        bottom: 45%;
+        /**right: -10px;**/
+    }
+    .arrow{
+       /** left: 50%;**/
+       margin-top: 20px;
+    }
+    .gnb{
+       /**right: 80px;**/
+    }
+    .gnb li {
+    /**margin: 0 20px;**/
+        
+    }
+    
+    
+    #headerSet {
+       /** padding-top: 70px;**/
+    }
+    .hamburger {
+           /** top: -25px;**/
+    }
+    .subCon1{
+       margin-top:-100px;
+    }
+    
+    
+    .ie .wrapMain{
+        
+    }
+    .ie .mainFront{
+      height:90vh;
+    }
+    .ie .copyRight{
+        /**bottom: 90%;**/
+    }
+    
+}
+
+/*1600x1200*/
+@media screen and (max-width:1600px){
+    .mainFront{
+        height:110vh;
+    }
+    .copyRight{
+        bottom: 40%;
+        /**right: -10px;**/
+    }
+    .arrow{
+       /** left: 50%;**/
+       margin-top: 20px;
+    }
+    .gnb{
+       /**right: 80px;**/
+    }
+    .gnb li {
+    /**margin: 0 20px;**/
+        
+    }
+    
+    
+    #headerSet {
+       /** padding-top: 70px;**/
+    }
+    .hamburger {
+           /** top: -25px;**/
+    }
+    .subCon1{
+       margin-top:30px;
+    }
+    
+    
+    .ie .wrapMain{
+        
+    }
+    .ie .mainFront{
+      height:105vh;
+    }
+    .ie .copyRight{
+        /**bottom: 90%;**/
+    }
+}
+
+/*1440x900*/
+@media screen and (max-width:1440px){
+    .mainFront{
+        height:80vh;
+    }
+    .copyRight{
+        bottom: 60%;
+        /**right: -10px;**/
+    }
+    .arrow{
+       /** left: 50%;**/
+       margin-top: -20px;
+    }
+    .gnb{
+       /**right: 80px;**/
+    }
+    .gnb li {
+    /**margin: 0 20px;**/
+        
+    }
+    
+    
+    #headerSet {
+       /** padding-top: 70px;**/
+    }
+    .hamburger {
+           /** top: -25px;**/
+    }
+    .subCon1{
+       margin-top:-250px;
+    }
+    
+    
+    .ie .wrapMain{
+        
+    }
+    .ie .mainFront{
+      height:80vh;
+    }
+    .ie .copyRight{
+        /**bottom: 90%;**/
+    }
+    
+}
+
+
+/*내노트북사이즈 1366*768*/
 @media screen and (max-width:1366px){
     .mainFront{
-        height: 60vh;
+        height: 62vh;
     }
     .copyRight{
         bottom: 80%;
@@ -17,16 +243,19 @@
     }
     .arrow{
         left: 50%;
-        height: 10vh;
+        height: 7vh;
     }
     .gnb{
         font-size:13px; 
-            right: 80px;
+        right: 80px;
+        
     }
     .gnb li {
     margin: 0 20px;
         
     }
+    
+    
     #headerSet {
         padding-top: 70px;
     }
@@ -34,7 +263,7 @@
             top: -25px;
     }
     .subCon1{
-        margin-top:-370px;
+        margin-top:-420px;
     }
     
     
@@ -42,14 +271,21 @@
         
     }
     .ie .mainFront{
-      
+      height:60vh;
     }
     .ie .copyRight{
         bottom: 90%;
     }
+
+
+
+
+
+
 }
-/*작은노트북사이즈*/
+/*작은노트북사이즈 1280x1024*/
 @media screen and (max-width:1024px){
+    /**
     .mainFront{
         height: 80vh;
     }
@@ -66,7 +302,7 @@
     .gnb li {
     margin: 0 10px;
         
-    }
+    }**/
 }
 
 /*모바일사이즈*/

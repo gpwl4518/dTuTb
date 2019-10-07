@@ -147,13 +147,19 @@
 
 .moreBtn{
     display:block;
+    /**
     margin:20px 290px;
-    padding-top: 100px;
+    padding-top: 100px;**/
 }
 
 .moreBtn2{
+    padding-top: 15px;
 }
-
+.bigMorebtn{
+    margin-left:288px;
+    padding-top: 120px;
+    
+}
 
 .webClick{
     width: 650px;
@@ -172,6 +178,8 @@
     color: #fff;
     font-size: 20px;
     font-weight: 200;
+    width:650px;
+    height: 366px;
 }
 
 
@@ -237,6 +245,8 @@ input{
 
 .emailForm{
     background: url(../images/conback.png) no-repeat center center;
+     box-sizing: border-box;
+    background-size: cover;
 
     height: 470px;
     text-align: center;

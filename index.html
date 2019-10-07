@@ -28,6 +28,7 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/form-submission-handler.js"></script>
     <script type="text/javascript" src="js/aos.js"></script>
+
     
     <script type="text/javascript">
         $(document).ready(function(){
@@ -64,14 +65,21 @@
         })();
     </script>
    <!--맨밑에 샌드메일 버튼-->
+   
     <!--로딩화면-->
     <script>
     $(window).load(function(){
-        $(".loading").fadeOut(1500);
+        
+        $(".loading").delay(2300).slideUp(900);//슬라이드 업대신 fadeOut(1000)해도됨
+
     });
     </script>
     <!--로딩화면-->
-
+     
+   <!--익스플로러일떄 경고창-->
+    <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("해당 홈페이지는 [chrome]브라우저에 최적화 되어있습니다. \n\n안전하고 쾌적한 인터넷 환경을 위해 [chrome]브라우저를 사용해주세요.\n\nPlease view this hompage in a modern browser that supports CSS Variables.");</script>
+    <!--익스플로러일떄 경고창-->
+     
        
     <!--파비콘(젤끝에먹게하는게 좋다-->
     <link rel=" shortcut icon" href="images/favicon.ico">
@@ -82,14 +90,24 @@
 
 </head>
     <body> 
-        <!--익스플로러경고창-->
-        <!--[if lt IE 9> <script type="text/javascript"> alert('이 사이트는 chrome에 최적화 되어있습니다.') </script> <![endif]-->
         
+        <!--익스플로러경고창9이하거나 8이하일떄 뜨는거-->
+        
+        <!--[if lte IE 8]> <script type=text/javascript> alert("해당 홈페이지는 [chrome]브라우저에 최적화 되어있습니다. \n\n안전하고 쾌적한 인터넷 환경을 위해 [chrome]브라우저나 [Internet Explorer 11] 이상의 브라우저를 사용해주세요.\n\nPlease view this hompage in a modern browser that supports CSS Variables."); </script> <![endif]-->
+        
+        <!--[if lte IE 9]> <script type=text/javascript> alert("해당 홈페이지는 [chrome]브라우저에 최적화 되어있습니다. \n\n안전하고 쾌적한 인터넷 환경을 위해 [chrome]브라우저나 [Internet Explorer 11] 이상의 브라우저를 사용해주세요.\n\nPlease view this hompage in a modern browser that supports CSS Variables."); </script> <![endif]-->
 
-        <!--익스플로러일때-->
-     
+        <!--[if gte IE 9]>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                   
+                })
+            </script>
+        <![endif]-->
+        <!--익스플로러경고창9이하거나 8이하일떄 뜨는거-->
 
-
+        
+        
         
         
         <!--전체시작-->
@@ -117,7 +135,7 @@
             <!--헤더시작-->
             <aside id="headerSet">
                     <nav class="header heBox1 active" data-target="1">
-                            <div class="logoSet cf" data-aos="fade-down" data-aos-duration="2300">
+                            <div class="logoSet cf" data-aos="fade-down" data-aos-delay="2300" data-aos-duration="2300">
                                 <!--로고시작-->
                                 <h1><a href="#"><img src="images/logo.png" alt="로고"/></a></h1>
                                 <!--로고끘-->
@@ -165,7 +183,7 @@
                                    
                     </nav>
                 </aside>
-
+             <!--헤더끝-->
                 <script type="text/javascript">
                 //<![CDATA[ 
                 $(window).on('scroll', function() {
@@ -198,7 +216,7 @@
                     <!--메인움직이게하는거-->
 
                     <!--메인 위에 글씨 감싸는 클래스-->
-                    <div class="mainFront" data-aos="fade-up" data-aos-duration="2300">
+                    <div class="mainFront" data-aos="fade-up" data-aos-delay="2300" data-aos-duration="2300">
                         <!--저작권그거-->
                         <div class="copyRight">
                         Copyright &#169; 2019 HYE JI. All rights reserved
@@ -251,7 +269,7 @@
                     
                         
                         
-                        <div class="box1 cf" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="box1 cf" data-aos="fade-left" data-aos-duration="1000" >
                             <div class="textBox1">
                                 <a href="#">
                                 <img class="oneImg" src="images/01.png" alt="01"/>
@@ -263,10 +281,10 @@
                                 <a class="webImg" href="#"><img src="images/webImg.png" alt="웹대표이미지"/></a>
                                 
                                 <div class="webClick">
-                                    <a class="moreBtn" href="https://gpwl4518.github.io/mac/" target="_blank">
-                                    <img src="images/more.png">
+                                    <a class="moreBtn" href="sub/sub1html.html">
+                                        <img class="bigMorebtn" src="images/more.png">
+                                        <div class="moreBtn2" href="#">MORE</div>
                                     </a>
-                                    <a class="moreBtn2" href="#">MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -499,6 +517,16 @@
         </div>
         <!--전체시작-->
     </body>
-    <div class="loading"></div>
+    <div class="loadingBox">
+        <div class="loading">
+        <!-- partial:index.partial.html -->
+            <div class="word">LOADING...</div>
+            <div class="overlay"></div>
+            <!-- partial -->
+              <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+            <script src='http://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js'></script>
+            <script  src="js/loading.js"></script>
+        </div>
+    </div>
     
 </html>
