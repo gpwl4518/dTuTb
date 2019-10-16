@@ -49,6 +49,19 @@
     .ie .copyRight{
         /**bottom: 90%;**/
     }
+    
+    
+    /**서브**/
+    .original{
+        margin-top: -1155px;
+    }
+    .description--preview{
+        left: 85%;
+    }
+    .longMac{
+        margin-left: -1170px;
+    }
+    
 }
 
 /* 1920x1200*/
@@ -94,6 +107,17 @@
         /**bottom: 90%;**/
     }
     
+    
+    /**서브**/
+    .original{
+        margin-top: -1815px;
+    }
+    .description--preview{
+        left: 90%;
+    }
+    .longMac{
+        margin-left: -1060px;
+    }
 }
 
 /* 1680x1050*/
@@ -137,6 +161,16 @@
     }
     .ie .copyRight{
         /**bottom: 90%;**/
+    }
+    /**서브**/
+    .original{
+   
+    }
+    .description--preview{
+        left: 94%;
+    }
+    .longMac{
+        margin-left: -1060px;
     }
     
 }
@@ -183,6 +217,19 @@
     .ie .copyRight{
         /**bottom: 90%;**/
     }
+    
+    
+    
+    /**서브**/
+    .original{
+        margin-top: -1830px;
+    }
+    .description--preview{
+        left: 90%;
+    }
+    .longMac{
+        margin-left: -925px;
+    }
 }
 
 /*1440x900*/
@@ -228,6 +275,18 @@
         /**bottom: 90%;**/
     }
     
+    
+    /**서브**/
+    .original{
+      margin-top: -2930px;
+    }
+    .description--preview{
+        left: 98%;
+    }
+    
+    .longMac{
+        margin-left: -937px;
+    }
 }
 
 
@@ -278,6 +337,14 @@
     }
 
 
+    /**서브**/
+    .original{
+      margin-top: -2995px;
+    }
+    .description--preview{
+        left: 98%;
+    }
+    
 
 
 
@@ -331,6 +398,7 @@
     }
     .hamburger{
         margin: 50px;
+        margin-top: 75px;
     }
     .arrow{
         left: 52%;

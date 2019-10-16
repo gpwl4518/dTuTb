@@ -1,6 +1,9 @@
 @charset "utf-8";
 
 /*sub 서브2*/
+body{
+    font-family: 'NotoSans', sans-serif;
+}
 
 
 #wrap2{
@@ -9,7 +12,168 @@
     background: #0F0F14;
     
 }
+.container{
+    width: 100%;
+}
+#wrap2 .portTopmargin{
+    height: 90px;
+    margin-top: 150px;
+    font-family: 'Noto Sans';
+    background: url(../images/popo.png) no-repeat center center;
+    text-indent: -9999px;
+    background-position: center;
+    
+}
+.webFont{
+    font-family: 'NotoSans';
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    color:#79787D;
+    font-weight: 500;
+}
+#headerSet{
+    margin-top: -150px;
+}
+
+.conH3{
+    font-family: 'NotoSans';
+    font-size: 35px;
+    font-weight: 200;
+    color: #9E9DA4;
+    margin-top: 15px;
+    margin-bottom: -20px;
+}
+
+.conH3 span{
+    font-weight: 500;
+    font-size: 30px;
+   
+}
+
+.conH32{
+}
+.conH3 .MacFont{
+    font-size: 50px;
+    display: inline-block;
+    font-weight: 500;
+    color:#737373;
+}
 
 
+.conH3 .MacSub{
+    line-height: 35px;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    letter-spacing: -0.5px;
+    color: #737373;
+}
+
+.conH3 .VitaFont{
+    letter-spacing: -1.5px;
+}
+/*********html에서 박스크기내에서 사진만 확대하는방법***************************/
+
+.grid__item{
+    overflow: hidden;    
+    margin:10px;
+    width: 480px;
+    height: 370px;
+    position: relative;
+}
+
+.grid__item img{
+    width: 100%;
+    transition: transform 0.7s;/*속도스 2초스로 확대스 이거없으면 그냥 띡! 확대됨*/
+
+    content:"";/*글없이하려면 content는 ""하고 바로밑에두개 없애면됨*/
+    text-align: center;
+    color:#fff;
+    
+}
+
+.grid__item:hover a img{
+    transform: scale(1.07);
+    
+}
+
+.itemm{
+     height: 330px;
+}
+.conH32{
+    position: absolute;
+    top:-15px;
+    background:rgba(0,0,0,0.0);    
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    box-sizing: border-box;
+    transition: all 0.4s;
+    padding-top: 28%;
+    line-height: 30px;
+    width: 480px;
+    height: 370px;
+    color: rgba(0,0,0,0);
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.grid__item .conh323{
+    padding-top: 22%;
+    
+}
+.conH32:hover{
+    color: #fff;
+    background-color: rgba(0,0,0,0.6);
+    width: 480px;
+    height: 370px;
+
+    
+}
+/*********css에서 박스크기내에서 사진만 확대하는방법***************************/
 
 
+.img-wrap{
+   
+}
+.fa {
+    font-size: 50px;
+}
+
+.icon1{
+    vertical-align:middle;
+    margin-right: 10px;
+    margin-bottom: -3px;
+}
+.details ul li span{
+    vertical-align: middle;
+    font-weight: 300;
+    color: #747474;
+    letter-spacing: -0.5px;
+}
+.em{
+    font-size: 30px;
+}
+.details{
+}
+.longMac{
+    width: 1364px;
+    height: 9080px;
+    background: url(../images/longMac_02.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    margin-left: -937px;
+    left: 50%;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    
+}
+
+.longVita{    
+    height: 9643px;
+    background: url(../images/longVita_02.png) no-repeat;
+    
+    
+}

@@ -161,6 +161,7 @@
     
 }
 
+
 .webClick{
     width: 650px;
     height: 366px;
@@ -196,7 +197,87 @@
     left: -450px;
 }
 
+/***********그래픽호버*****************/
+.graphicClick{
+    width: 487px;
+    height: 668px;
+    text-align: center;
+    background: url(../images/GraphicImghover.png) no-repeat;
+    position: absolute;
+    top:0;
+    opacity: 0;/*★세트*/
+    transition: opacity 0.4s ;/*★세트*//*이건 디스플레이 논/블락으로 스르륵
+    효과못주기 떄문에 오퍼시티로 0한다음에 밑에 호버에 1줘야 스르륵가능함*/
+}
+.graphicClick a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 200;
+    width: 487px;
+    height: 668px;
+}
 
+
+
+
+.Graphic:hover .graphicClick{
+    display: block;
+    opacity: 1;/*★세트*/
+    transition: opacity 0.4s;
+}
+
+.sub2TextBox1{
+    position: absolute;
+    left: -450px;
+}
+
+.bigMorebtn2{
+   margin-left: 0px;
+  padding-top: 270px;
+    
+}
+/***********그래픽호버*****************/
+
+/***********브랜딩호버*****************/
+.BrandingClick{
+    width: 487px;
+    height: 668px;
+    text-align: center;
+    background: url(../images/BrandingImghover.png) no-repeat;
+    position: absolute;
+    top:0;
+    opacity: 0;/*★세트*/
+    transition: opacity 0.4s ;/*★세트*//*이건 디스플레이 논/블락으로 스르륵
+    효과못주기 떄문에 오퍼시티로 0한다음에 밑에 호버에 1줘야 스르륵가능함*/
+}
+.BrandingClick a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 200;
+    width: 487px;
+    height: 668px;
+}
+
+
+
+
+.Branding:hover .BrandingClick{
+    display: block;
+    opacity: 1;/*★세트*/
+    transition: opacity 0.4s;
+}
+
+.sub2TextBox1{
+    position: absolute;
+    left: -450px;
+}
+
+.bigMorebtn2{
+   margin-left: 0px;
+  padding-top: 270px;
+    
+}
+/***********브랜딩호버*****************/
 
 
 /*********************contact**********************/
