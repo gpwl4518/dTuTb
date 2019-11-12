@@ -51,7 +51,7 @@ a {
 
 a:hover,
 a:focus {
-	color: #fff;
+	/**color: #fff; 반짝거리는거 뺏당**/
 }
 
 button:focus {
