@@ -177,6 +177,43 @@ body{
     
     
 }
+.longOri{    
+    height: 6460px;
+    background: url(../images/longOri_02.png) no-repeat;
+    
+    
+}
+.longSul{    
+    height: 4000px;
+    background: url(../images/longSul_02.png) no-repeat;
+    
+    
+}
+.longHol{    
+    height: 2100px;
+    background: url(../images/longHol_02.png) no-repeat;
+    
+    
+}
+
+.longSam{    
+    height: 2800px;
+    background: url(../images/longSam_02.png) no-repeat;
+    
+    
+}
+.longWoo{    
+    height: 3000px;
+    background: url(../images/longWoo_02.png) no-repeat;
+    
+    
+}
+.longHan{    
+    height: 2800px;
+    background: url(../images/longHan_02.png) no-repeat;
+    
+    
+}
 
 .siteLink{
     width: 170px;
@@ -187,6 +224,7 @@ body{
     margin-top: 25px;
     font-size: 15px;
     background: url(../images/btnGoSite2.png) no-repeat 100px 15px;
+    transition:background 0.8s;/*니가바뀌는 모든속성을 바꿔라=all*/
    
 }
 .siteLink a{
@@ -195,15 +233,14 @@ body{
 }
 
 .siteLink a:hover{
-    background-color:rgba(0,0,0,0.2);
+    background-color:rgba(0,0,0,0);
     color:#fff;
-    transition:background 0.5s;/*니가바뀌는 모든속성을 바꿔라=all*/
 }
 
 .siteLink:hover{
     background: url(../images/btnGoSite.png) no-repeat ;
     background-position: 100px 15px;
-    background-color:rgba(0,0,0,0.2);
+    background-color:rgba(0,0,0,0.4);
 }
 .explanation{
     cursor:text;
@@ -213,6 +250,7 @@ body{
 }
 .MacFont{
     cursor:text;
+    letter-spacing: -1px;
 }
 .MacSub{
     cursor:text;
