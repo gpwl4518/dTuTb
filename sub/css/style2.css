@@ -110,7 +110,10 @@
     margin-top: -2991px;
     margin-bottom: 1000px;
     margin-left: -70px;
+    
+    z-index: 0;
 }
+
 
 .preview--open .animate {
 	/* open */
@@ -365,4 +368,8 @@
 	.details {
 		display: none;
 	}
+}
+
+@media screen and (max-width:768px){
+    
 }
