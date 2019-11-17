@@ -375,6 +375,9 @@
 /*모바일사이즈*/
 @media screen and (max-width:768px){
     
+    /*inner값 초기화*/
+    .inner{width:100%;}
+    
     .gnb{
         display: none;
     }
@@ -391,21 +394,151 @@
         display: none;
     }
     .logoSet {
-        left: 40px;
+       left: 35px;
+        bottom: -32px;
     }
     #headerSet{
-        padding-top: 40px;
+        padding-top: 32px;
+        background-color:#0F0F14;
+        /**background-image:url(../images/headerPatten.png);**/
+        height: 70px;
+        width: 100%;
+        border-bottom: 1.2px solid #404040;
     }
-    .hamburger{
+    /**.hamburger{
         margin: 50px;
         margin-top: 75px;
+    }**/
+    
+    .hamburger {
+    margin: 30px;
+    margin-top: 53px;
     }
+
     .arrow{
         left: 52%;
         height: 7vh;
     }
     .snsIcon {
     position: absolute;
-    bottom: 80px;
+    bottom: 20%; /**bottom: 80px;**/
     left: 40px;
+    }
+   .wrapMain{
+        background-image: url(../images/mobileBack.png)no-repeat;
+    }
+    .backFont{
+        display: none;
+    }
+    .backFont2{
+        display: none;
+    }
+    .backFont3{
+        display: none;
+    }
+    .textBox1{
+        display: none;
+    }
+    
+    .mobWeb{
+        display: block;
+        width: 480px;
+        text-align:center;
+        margin:0 auto;
+    }
+    .mobWebimg img{
+        margin-top: 25px;
+        margin-bottom: 120px;
+    }
+    .box1{
+        display: none;
+    }
+    .box2{
+        display: none;
+    }
+    .box3{
+        display: none;
+    }
+    .box4{
+        display: none;
+    }
+    .subCon2{
+        display: none;
+    }
+    .subCon1 {
+     margin-top: -200px;
+    }
+    .mobText{
+        font-family: 'NotoSans';
+        font-size: 17px;
+        letter-spacing: 0;
+        color: #79787D;
+        font-weight: 500;
+    }
+    
+    .mobTitle{
+         display: block;
+        width: 120px;
+        text-align: center;
+        margin: 0 auto;
+        border-bottom: 1.3px solid #404040;
+        margin-bottom: 40px;
+        padding-bottom: 10px;
+        
+    }
+    .subContent{
+        background-color: #0F0F14;
+    }
+    .contact {
+    margin-top: 2500px;
+    }
+    
+    .description{
+        display: none;
+    }
+    /**
+    .conH3{
+        display: none;
+    }**/
+    .action--close{
+        padding: 1em;
+        padding-right: 30px;
+    }
+    
+
+   .original{
+    }
+    .test1 img{
+    display: block;
+    }
+    .longMac{
+        display: none;
+    }
+    /**
+    .preview::before{
+        height: 1000px;
+    }**/
+    .longMac{
+    }
+    .mobmacTitle{
+         padding-top: 145px;
+        padding-bottom: 10px;
+        color: #424242;
+        font-weight: 600;
+        letter-spacing: -1px;
+        font-size: 22px;
+    }
+    .mobmacSub{
+        font-size: 15px;
+        color:#2A2A2A;
+        font-weight: 200;
+        padding-bottom: 20px;
+        line-height: 25px;
+    }
+    #wrap2{
+        height: 1000px;
+    }
+    .mobtestText1{
+        display: block;
+    }
 }
