@@ -214,6 +214,15 @@ body{
     
     
 }
+.longBusan{    
+    height: 6242px;
+    background: url(../images/longBusan_02.jpg) no-repeat;
+}
+
+.longAsia{    
+    height: 6242px;
+    background: url(../images/longAsia_02.jpg) no-repeat;
+}
 
 .siteLink{
     width: 170px;
